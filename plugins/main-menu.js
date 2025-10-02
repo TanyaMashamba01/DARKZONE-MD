@@ -346,14 +346,14 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/8cb9h0.jpg' },
+                image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/ifbd7q.jpg' },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363416743041101@newsletter',
+                        newsletterJid: '120363347365643318@newsletter',
                         newsletterName: config.BOT_NAME,
                         serverMessageId: 143
                     }
@@ -363,7 +363,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         );
 // share local audio 
 
-const audioPath = path.join(__dirname, '../assets/menu.m4a');
+const audioPath = path.join(__dirname, 'https://files.catbox.moe/vpnqp7.mp3');
 await conn.sendMessage(from, {
     audio: fs.readFileSync(audioPath),
     mimetype: 'audio/mp4',
