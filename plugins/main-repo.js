@@ -33,22 +33,22 @@ async (conn, mek, m, { from, reply }) => {
 
         // Send image with caption
         await conn.sendMessage(from, {
-            image: { url: `https://files.catbox.moe/lpniig.jpg` },
+            image: { url: `https://files.catbox.moe/ifbd7q.jpg` },
             caption: formattedInfo,
             contextInfo: { 
                 mentionedJid: [m.sender],
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363416743041101@newsletter',
-                    newsletterName: '𝐸𝑅𝐹𝒜𝒩 𝒜𝐻𝑀𝒜𝒟',
+                    newsletterJid: '120363347365643318@newsletter',
+                    newsletterName: '𝐸𝑅𝐹𝒜𝒩 TELKING',
                     serverMessageId: 143
                 }
             }
         }, { quoted: mek });
 
         // Send local audio file
-        const audioPath = path.join(__dirname, '../assets/menu.m4a');
+        const audioPath = path.join(__dirname, 'https://files.catbox.moe/vpnqp7.mp3');
         await conn.sendMessage(from, {
             audio: fs.readFileSync(audioPath),
             mimetype: 'audio/mp4',
@@ -58,7 +58,7 @@ async (conn, mek, m, { from, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363416743041101@newsletter',
+                    newsletterJid: '120363347365643318@newsletter',
                     newsletterName: '𝐸𝑅𝐹𝒜𝒩 𝒜𝐻𝑀𝒜𝒟',
                     serverMessageId: 143
                 }
